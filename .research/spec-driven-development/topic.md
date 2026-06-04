@@ -31,7 +31,7 @@ Out of scope:
 
 ### Methodology Definition
 
-SDD emerged in mid-2025 as a named reaction to "vibe coding." Core idea: spec is the primary artifact; code is derived and regenerable. IBM defines it as using "well-crafted software requirement specifications as prompts, aided by AI coding agents, to generate executable code."
+SDD emerged in mid-2025 as a named reaction to "vibe coding." Core idea: spec and code are co-delivered — a builder works from their angle of expertise and uses AI to generate spec, code (including tests), and product from that angle. The spec is both input to and output of AI-assisted building. IBM defines it as using "well-crafted software requirement specifications as prompts, aided by AI coding agents, to generate executable code."
 
 Three rigor levels (Böckeler/Thoughtworks taxonomy, widely cited):
 - **Spec-first**: Spec guides initial build, discarded after code ships
@@ -69,6 +69,13 @@ Installable skills; agents pick up where humans left off; per-task independent r
 PRD prompt file → Task generation prompt → Task execution prompt
 ```
 No tooling; pure markdown prompt files as repo assets.
+
+**Pattern F — Co-Delivery (multi-angle)** (practitioner model):
+```
+Builder (one angle) → spec + code + tests → MR
+Other angles → contribute to spec before/after MR → improved spec + code
+```
+Spec and implementation are submitted together, not sequentially. A feature has multiple angles (product, design, engineering, security, etc.); no single builder covers all angles. The MR is the integration point where builders from other angles improve the spec and code. The spec is both input to and output of AI-assisted building.
 
 ### Common Spec Formats
 

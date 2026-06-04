@@ -10,7 +10,7 @@ What popular spec-driven development (SDD) skills, plugins, and tools exist, and
 
 ## Verdict
 
-SDD is a real and rapidly maturing practice (emerged mid-2025) with a clear mainstream and several diverging schools. The mainstream consensus is **spec-anchored development**: markdown spec files (`requirements.md`, `design.md`, `tasks.md`) live alongside code and evolve with it, with a 3–7 phase gated pipeline from specify → plan → implement. EARS notation ("WHEN X THE SYSTEM SHALL Y") is the dominant requirement format. Most tools target Claude Code as a primary integration surface.
+SDD is a real and rapidly maturing practice (emerged mid-2025) with a clear mainstream and several diverging schools. The mainstream consensus is **spec-anchored development**: spec and code are co-delivered — a builder works from their angle of expertise and submits spec + code together in an MR; builders from other angles contribute before and after to improve both. The spec lifecycle is iterative and collaborative, not a sequential gate. Most tools encode this as markdown spec files (`requirements.md`, `design.md`, `tasks.md`) living alongside code, with 3–7 phase pipelines that are angle-scoped rather than blocking. EARS notation ("WHEN X THE SYSTEM SHALL Y") is the dominant requirement format. Most tools target Claude Code as a primary integration surface.
 
 The dominant open-source tools are GitHub Spec Kit (~90k stars), BMAD-METHOD (~47k stars), and OpenSpec. For Claude Code specifically, cc-sdd is the most comprehensive native harness (17 skills, TDD loop, auto-debug). The most experimental bet — spec-as-source where code is always generated — is pursued only by Tessl (closed beta).
 
@@ -26,6 +26,7 @@ The dominant open-source tools are GitHub Spec Kit (~90k stars), BMAD-METHOD (~4
 
 ## Contradictions and weakening evidence
 
+- **Co-delivery vs. sequential gate**: Practitioner experience shows spec, code, and product are co-delivered — a builder works from one angle and submits both together. Several tools (spec-kit, Kiro) enforce phase-gated pipelines that imply spec must be "Approved" before implementation. This tension is real: gated tools are valuable for governance but can misrepresent the underlying workflow.
 - No consensus on whether spec or code is the authoritative source of truth. The most credible voices (Thoughtworks, Martin Fowler) explicitly leave this unresolved.
 - MDD parallel is a genuine risk: Model-Driven Development had similar promises in the 2000s and largely failed for business applications. LLMs reduce some constraints but add non-determinism. Whether SDD avoids MDD's fate is unknown.
 - "Spec-driven development" is semantically diluted — used for anything from structured prompting to full spec-as-source generation.

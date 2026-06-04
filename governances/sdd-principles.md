@@ -6,7 +6,7 @@ Core rules for spec-driven development. Load this governance when writing, revie
 
 ## The rules
 
-1. **Spec before code.** No implementation begins without an Approved spec. A Draft spec is not enough.
+1. **Spec alongside code.** Spec, code, and product are co-delivered — not sequential. A builder works from their angle of expertise (product, design, engineering, security, etc.) and submits spec + code together. A feature has multiple angles; no single builder completes the full spec upfront. Builders from other angles contribute before and after the MR to improve the spec, code, and product.
 
 2. **The spec owns the behavior.** If the implementation disagrees with the spec, the implementation is wrong — unless the spec is revised through a review cycle.
 
