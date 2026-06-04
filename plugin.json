@@ -1,0 +1,7 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/.plugin/plugin.schema.json",
+  "name": "spec-driven-development",
+  "version": "0.1.0",
+  "description": "Spec-driven development — write behavioral specs before implementation",
+  "skills": "./skills/"
+}
