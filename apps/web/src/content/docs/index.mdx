@@ -1,0 +1,36 @@
+---
+title: Spec-Driven Development
+description: Co-deliver behavioral specs and implementation with your AI coding assistant.
+template: splash
+hero:
+  tagline: Write specs and code together — not one before the other.
+  actions:
+    - text: Get started
+      link: /spec-driven-development/methodology/overview/
+      icon: right-arrow
+      variant: primary
+    - text: Skills reference
+      link: /spec-driven-development/skills/create-spec/
+      icon: open-book
+---
+
+## What is this?
+
+The `spec-driven-development` plugin for Claude Code ships two skills that help you co-deliver behavioral specs alongside your implementation. It is not a "spec before code" workflow — specs and code are written together, reviewed together, and shipped together.
+
+## Install
+
+Add the plugin via Claude Code:
+
+```bash
+claude plugin add cyberuni/spec-driven-development
+```
+
+Then trigger skills in Claude Code by saying **"create spec for X"** or **"validate spec"**.
+
+## Quick reference
+
+| Say this | What happens |
+|---|---|
+| "create spec for X" | Scaffolds `specs/X/spec.md` + `specs/X/X.feature` |
+| "validate spec" | Checks completeness, consistency, and SDD compliance |
