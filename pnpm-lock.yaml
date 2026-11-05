@@ -13,7 +13,7 @@ importers:
         version: 2.4.16
       '@repobuddy/biome':
         specifier: ^2.3.1
-        version: 2.3.1(@biomejs/biome@2.4.16)
+        version: 2.6.0(@biomejs/biome@2.4.16)
       turbo:
         specifier: ^2.5.4
         version: 2.9.16
@@ -733,10 +733,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@repobuddy/biome@2.3.1':
-    resolution: {integrity: sha512-dFxQSl+lYZ5Wc9TVUxrSwze9vwC6IBpg4zcbxJkLiZPPnYLX95Zvp9zC+ChPRmc2QpyVzqH4eGnxKzHaVZ1A7Q==}
+  '@repobuddy/biome@2.6.0':
+    resolution: {integrity: sha512-wBZA1D/2yxb19Bl8pLRqSvYwrp2K8ymVRxtZvQYt02T9iDV4JB34yx//NvxQTeMOkz3LM2cMn7oSaWwFgyn2DQ==}
     peerDependencies:
-      '@biomejs/biome': '>= 2'
+      '@biomejs/biome': '>= 2.5.0'
 
   '@rolldown/binding-android-arm-eabi@1.2.12':
     resolution: {integrity: sha512-dB/a1214qKfHMXCpgqR4OZT+jS4kTyEXbQGJPqzobt5EwH5rX080pxE37alt3RzvR1bf1Yz/yGqRfrYAxuPw0A==}
@@ -2761,7 +2761,7 @@ snapshots:
   '@pagefind/windows-x64@1.5.2':
     optional: true
 
-  '@repobuddy/biome@2.3.1(@biomejs/biome@2.4.16)':
+  '@repobuddy/biome@2.6.0(@biomejs/biome@2.4.16)':
     dependencies:
       '@biomejs/biome': 2.4.16
 
